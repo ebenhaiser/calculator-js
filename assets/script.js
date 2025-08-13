@@ -5,6 +5,11 @@ function appendToDisplay(value) {
   document.getElementById("display").value = currentDisplay;
 }
 
+function backspace() {
+  currentDisplay = currentDisplay.slice(0, -1);
+  document.getElementById("display").value = currentDisplay;
+}
+
 function clearDisplay() {
   currentDisplay = "";
   document.getElementById("display").value = "";
@@ -12,7 +17,6 @@ function clearDisplay() {
 
 function calculate() {
   try {
-    // Mengganti semua x dengan * dan : dengan / sekaligus
     const expression = currentDisplay.replace(/x/g, "*").replace(/:/g, "/");
     const result = eval(expression);
     document.getElementById("display").value = result;
