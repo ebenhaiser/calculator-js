@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator JS</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- own style -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" align="center">
+        <div class="card mt-5 shadow" style="width: 25rem">
+          <div class="card-header">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="display"
+              readonly
+            />
+          </div>
+          <div class="card-body calculator-buttons">
+            <div class="d-flex gap-2 mb-3">
+              <button
+                onclick="appendToDisplay('1')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                1
+              </button>
+              <button
+                onclick="appendToDisplay('2')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                2
+              </button>
+              <button
+                onclick="appendToDisplay('3')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                3
+              </button>
+              <button
+                onclick="appendToDisplay('/')"
+                class="btn btn-primary flex-grow-1"
+              >
+                :
+              </button>
+            </div>
+            <div class="d-flex gap-2 mb-3">
+              <button
+                onclick="appendToDisplay('4')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                4
+              </button>
+              <button
+                onclick="appendToDisplay('5')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                5
+              </button>
+              <button
+                onclick="appendToDisplay('6')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                6
+              </button>
+              <button
+                onclick="appendToDisplay('*')"
+                class="btn btn-primary flex-grow-1"
+              >
+                x
+              </button>
+            </div>
+            <div class="d-flex gap-2 mb-3">
+              <button
+                onclick="appendToDisplay('7')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                7
+              </button>
+              <button
+                onclick="appendToDisplay('8')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                8
+              </button>
+              <button
+                onclick="appendToDisplay('9')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                9
+              </button>
+              <button
+                onclick="appendToDisplay('-')"
+                class="btn btn-primary flex-grow-1"
+              >
+                -
+              </button>
+            </div>
+            <div class="d-flex gap-2 mb-3">
+              <button
+                onclick="clearDisplay()"
+                class="btn btn-outline-danger flex-grow-1"
+              >
+                C
+              </button>
+              <button
+                onclick="appendToDisplay('0')"
+                class="btn btn-secondary flex-grow-1"
+              >
+                0
+              </button>
+              <button onclick="calculate()" class="btn btn-success flex-grow-1">
+                =
+              </button>
+              <button
+                onclick="appendToDisplay('+')"
+                class="btn btn-primary flex-grow-1"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
