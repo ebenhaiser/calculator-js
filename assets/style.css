@@ -1,0 +1,24 @@
+body {
+  background-color: grey;
+}
+
+#display {
+  height: 70px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+}
+
+.calculator {
+  width: 25rem;
+}
+
+.calculator .calculator-buttons button {
+  width: 68px;
+  height: 60px;
+  font-weight: 700;
+}
+
+.equal-button {
+  width: 700px;
+}
